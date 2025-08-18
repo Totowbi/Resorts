@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Table</title>
+    <title>My Resort Gallery</title>
     <style>
         body {
             background-color: #FFF0F5; 
@@ -15,6 +16,7 @@
 
         td {
             padding: 10px;
+            text-align: center;
         }
 
         h1 {
@@ -24,74 +26,89 @@
         font[size="6"] {
             font-weight: bold;
         }
+
+        /* Tabs menu styling */
+        #tabsI ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #tabsI ul li {
+            margin: 0;
+        }
+
+        #tabsI ul li a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #tabsI ul li a:hover {
+            background-color: #555;
+        }
+
+        #tabsI ul li#current a {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1><center><font color="red" size="10">My Resort Gallery</font></center></h1>
+
+    <h1 style="text-align:center;">
+        <font color="red" size="10">My Resort Gallery</font>
+    </h1>
+
+    <div id="tabsI">
+        <ul>
+            <li><a href="MyMain.html"><span>Home</span></a></li>
+            <li><a href="FISHES Act1.html"><span>Fishes</span></a></li>
+            <li><a href="Flowers.html"><span>Flowers</span></a></li>
+            <li><a href="trees.html"><span>Trees</span></a></li>
+            <li id="current"><a href="resorts.html"><span>Resorts</span></a></li>
+            <li><a href="animals.html"><span>Animals</span></a></li>
+            <li><a href="fruits.html"><span>Fruits</span></a></li>
+            <li><a href="About.html"><span>About</span></a></li>
+        </ul>
+    </div>
 
     <center>
-    <table border="1" width="1000" height="500">
-        <tr>
-            <td align="center">
-                <img src="baliayana.jpg" width="500" height="500"><br>
-                <center><font size="6">Bali Ayana</font></center>
-            </td>
-            <td align="center">
-                <img src="bohol.jpg" width="500" height="500"><br>
-                <center><font size="6">Bohol Beach Club</font></center>
-            </td>
-            <td align="center">
-                <img src="boracay.jpg" width="500" height="500"><br>
-                <center><font size="6">Boracay</font></center>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <img src="elnido.jpg" width="500" height="500"><br>
-                <center><font size="6">El Nido</font></center>
-            </td>
-            <td align="center">
-                <img src="maldives.jpg" width="500" height="500"><br>
-                <center><font size="6">Maldives</font></center>
-            </td>
-            <td align="center">
-                <img src="palawan.jpg" width="500" height="500"><br>
-                <center><font size="6">Palawan</font></center>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <img src="phuket.jpg" width="500" height="500"><br>
-                <center><font size="6">Phuket</font></center>
-            </td>
-            <td align="center">
-                <img src="puntacana.jpg" width="500" height="500"><br>
-                <center><font size="6">Punta Cana</font></center>
-            </td>
-            <td align="center">
-                <img src="shangrila.jpg" width="500" height="500"><br>
-                <center><font size="6">Shangri-La Mactan</font></center>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <img src="siargao.jpg" width="500" height="500"><br>
-                <center><font size="6">Siargao</font></center>
-            </td>
-            <td align="center">
-                <img src="waikiki.jpg" width="500" height="500"><br>
-                <center><font size="6">Waikiki</font></center>
-            </td>
-            <td align="center">
-                <img src="acuatico.jpg" width="500" height="500"><br>
-                <center><font size="6">Acuatico</font></center>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <center><font color="red" size="10">Created by: De Guzman, Tobit B.</font></center>
-            </td>
-        </tr>
-    </table>
+        <table border="1" width="1000">
+            <tr>
+                <td><img src="baliayana.jpg" width="300" height="300" alt="Bali Ayana"><br><font size="6">Bali Ayana</font></td>
+                <td><img src="bohol.jpg" width="300" height="300" alt="Bohol Beach Club"><br><font size="6">Bohol Beach Club</font></td>
+                <td><img src="boracay.jpg" width="300" height="300" alt="Boracay"><br><font size="6">Boracay</font></td>
+            </tr>
+            <tr>
+                <td><img src="elnido.jpg" width="300" height="300" alt="El Nido"><br><font size="6">El Nido</font></td>
+                <td><img src="maldives.jpg" width="300" height="300" alt="Maldives"><br><font size="6">Maldives</font></td>
+                <td><img src="palawan.jpg" width="300" height="300" alt="Palawan"><br><font size="6">Palawan</font></td>
+            </tr>
+            <tr>
+                <td><img src="phuket.jpg" width="300" height="300" alt="Phuket"><br><font size="6">Phuket</font></td>
+                <td><img src="puntacana.jpg" width="300" height="300" alt="Punta Cana"><br><font size="6">Punta Cana</font></td>
+                <td><img src="shangrila.jpg" width="300" height="300" alt="Shangri-La Mactan"><br><font size="6">Shangri-La Mactan</font></td>
+            </tr>
+            <tr>
+                <td><img src="siargao.jpg" width="300" height="300" alt="Siargao"><br><font size="6">Siargao</font></td>
+                <td><img src="waikiki.jpg" width="300" height="300" alt="Waikiki"><br><font size="6">Waikiki</font></td>
+                <td><img src="acuatico.jpg" width="300" height="300" alt="Acuatico"><br><font size="6">Acuatico</font></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <center><font color="red" size="10">Created by: De Guzman, Tobit B.</font></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
 </body>
 </html>
